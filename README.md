@@ -91,3 +91,6 @@ Este proyecto me permitió practicar:
 ## 📄 Licencia
 
 Este proyecto es de código abierto para fines educativos.
+
+---
+Versión: 1.0
