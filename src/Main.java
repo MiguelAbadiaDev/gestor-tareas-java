@@ -54,7 +54,8 @@ public class Main {
             System.out.println("6. Marcar tarea como completada");
             System.out.println("7. Marcar tarea como pendiente");
             System.out.println("8. Eliminar tarea");
-            System.out.println("9. Salir");
+            System.out.println("9. Ver estadísticas");
+            System.out.println("10. Salir");
             eleccion = leerInt(sc);
 
             switch (eleccion) {
@@ -83,6 +84,9 @@ public class Main {
                     eliminarTarea(sc, tareas);
                     break;
                 case 9:
+                    mostrarEstadisticas(tareas);
+                    break;
+                case 10:
                     salida = true;
                     break;
                 default:
@@ -90,6 +94,30 @@ public class Main {
                     break;
             }
         }while (!salida);
+    }
+
+    /**
+     * Muestra estadísticas de las tareas
+     * @param tareas lista de tareas
+     */
+    public static void mostrarEstadisticas(ArrayList<Tarea> tareas) {
+        int total = tareas.size();
+        int completadas = 0;
+        int pendientes = 0;
+
+        for (Tarea t : tareas) {
+            if (t.isCompletada()) {
+                completadas++;
+            } else {
+                pendientes++;
+            }
+        }
+
+        System.out.println("\n=== ESTADÍSTICAS ===");
+        System.out.println("Total de tareas: " + total);
+        System.out.println("Completadas: " + completadas);
+        System.out.println("Pendientes: " + pendientes);
+        System.out.println("====================\n");
     }
 
     /**
