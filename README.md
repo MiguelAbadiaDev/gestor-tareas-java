@@ -93,4 +93,5 @@ Este proyecto me permitió practicar:
 Este proyecto es de código abierto para fines educativos.
 
 ---
-Versión: 1.0
+Versión: 1.0  
+Última actualización: Febrero 2026
