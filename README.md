@@ -41,14 +41,24 @@ src/
 git clone https://github.com/MiguelAbadiaDev/gestor-tareas-java.git
 ```
 
-2. Compila:
+2. Navega a la carpeta src:
+```bash
+cd src
+```
+
+3. Compila:
 ```bash
 javac *.java
 ```
 
-3. Ejecuta:
+4. Ejecuta:
 ```bash
 java Main
+```
+
+5. Para volver a la raíz:
+```bash
+cd ..
 ```
 
 ## 📸 Ejemplo de uso
@@ -73,6 +83,10 @@ Este proyecto me permitió practicar:
 
 **Miguel Abadía Peñalver**
 - GitHub: [@MiguelAbadiaDev](https://github.com/MiguelAbadiaDev)
+
+## 📧 Contacto
+
+¿Tienes preguntas o sugerencias? Abre un [issue](https://github.com/MiguelAbadiaDev/gestor-tareas-java/issues) o contáctame en GitHub.
 
 ## 📄 Licencia
 
